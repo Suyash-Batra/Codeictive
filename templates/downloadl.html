@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeictive - Homepage</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/static/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="navbar_container">
+      <div id="parallel">
+        <a href="{{url_for('index')}}"><div class="navbox">Home</div></a>
+        <a href="{{url_for('about')}}"><div class="navbox">About</div></a>
+      </div>
+      <div id="parallel2">
+        <div class="navbox_brand"><h3>Codeictive</h3></div>
+      </div>
+      <div id="parallel3">
+        <a href="instagram.com">
+          <div class="navbox"><i class="fa-brands fa-instagram"></i></div
+        ></a>
+        <a href="x.com"
+          ><div class="navbox"><i class="fa-brands fa-x-twitter"></i></div
+        ></a>
+        <a href="linkdin.com"
+          ><div class="navbox"><i class="fa-brands fa-linkedin"></i></div
+        ></a>
+      </div>
+    </div>
+    <div class="empty"></div>
+    <center>
+      <div id="container_down">
+        <div class="heading">Your download is ready</div>
+        <div class="subhead">
+          Ready to download? Click the button below to begin.
+        </div>
+        <a href="{{url_for('downl')}}" target="_blank">
+        <button id="download">Download</button></a>
+      </div>
+    </center>
+  </body>
+</html>

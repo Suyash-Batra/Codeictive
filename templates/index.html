@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeictive - Homepage</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="navbar_container">
+      <div id="parallel">
+        <a href="{{ url_for('index') }}"><div class="navbox">Home</div></a>
+        <a href="{{url_for('about')}}"><div class="navbox">About</div></a>
+      </div>
+      <div id="parallel2">
+        <div class="navbox_brand"><h3>Codeictive</h3></div>
+      </div>
+      <div id="parallel3">
+        <a href="https://www.instagram.com">
+          <div class="navbox"><i class="fa-brands fa-instagram"></i></div>
+        </a>
+        <a href="https://www.x.com">
+          <div class="navbox"><i class="fa-brands fa-x-twitter"></i></div>
+        </a>
+        <a href="linkedinlogin.html">
+          <div class="navbox"><i class="fa-brands fa-linkedin"></i></div>
+        </a>
+      </div>
+    </div>
+
+    <div id="banner_container">
+      <div id="banner_content">
+        <div class="heading1">Welcome to Codeictive,</div>
+        <div class="subhead1">
+          The online scraping platform that securely logs in to Instagram, X,
+          and LinkedIn, capturing essential screenshots for reliable
+          record-keeping.
+        </div>
+      </div>
+      <div id="image">
+        <div id="imgbanner">
+          <img src="../static/images/q.webp" />
+        </div>
+      </div>
+    </div>
+
+    <a href="#platforms">
+      <div id="arrow">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </a>
+
+    <div id="container">
+      <a name="platforms"></a>
+      <div class="heading">Our platforms</div>
+    </div>
+
+    <div id="platform">
+      <a href="">
+        <div class="card">
+          <div class="circle">
+            <br />
+            <div class="logo">
+              <img
+                src="../static/images/insta.png"
+                height="150px"
+                width="auto"
+                class="image_hover"
+              />
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="{{ url_for('xlogin') }}">
+        <div class="card">
+          <div class="circle2">
+            <br />
+            <div class="logo">
+              <img
+                src="../static/images/x.webp"
+                height="150px"
+                width="auto"
+                class="image_hover"
+              />
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="{{ url_for('linkedinlogin') }}">
+        <div class="card">
+          <div class="circle3">
+            <br />
+            <div class="logo">
+              <img
+                src="../static/images/in.png"
+                height="150px"
+                width="auto"
+                class="image_hover"
+              />
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
